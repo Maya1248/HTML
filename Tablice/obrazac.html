@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Obrazac</title>
+</head>
+
+<body>
+	<h1>Obrazac o učeniku</h1>
+	<hr width="70%" align="left">
+	
+	<div id="osobne-info">
+		<p>Ime: <input type="text" maxlength="30"></p>
+		<p>Prezime: <input type="text" maxlength="30"></p>
+		<p>Lozinka: <input type="password"></p>
+		<p>Spol: <input type="radio" name="spol" checked="True"> Muško <input type="radio" name="spol"> Žensko</p>
+		<p>Mjesto:  
+			<select id="grad">
+				<option value="zagreb">Zagreb</option>
+				<option value="zagreb">Split</option>
+				<option value="zagreb">Rijeka</option>
+				<option value="zagreb">Osijek</option>
+				<option value="zagreb">Zadar</option>
+				<option value="zagreb">Pag</option>
+			</select>
+		</p>
+	</div>
+	
+	<div id="skola-znanje">
+		<hr width="50%" align="left">
+		<p><input type="radio" name="obrazovanje">Osnovna škola</p>
+		<p><input type="radio" name="obrazovanje" checked="True">Srednja škola</p>
+		<p><input type="radio" name="obrazovanje">Fakultet</p>
+		<br>
+		<p><input type="checkbox" checked="True">Izrada web stranica</p>
+		<p><input type="checkbox">Web programiranje</p>
+		<p><input type="checkbox">Baze podataka</p>
+	</div>
+	
+	<div id="preferencije">
+		<hr width="50%" align="left">
+		<p>Omiljeni sport: 
+			<select id="sport">
+				<option value="nogomet">Nogomet</option>
+				<option value="rukomet" selected="selected">Rukomet</option>
+				<option value="odbojka">Odbojka</option>
+			</select>
+			 Omiljena glazba: 
+			<select id="glazba">
+				<option value="pop">Pop</option>
+				<option value="rock">Rock</option>
+				<option value="funky" selected="selected">Funky</option>
+				<option value="tehno">Tehno</option>
+			</select>
+		</p>
+		<hr width="50%" align="left">
+	</div>
+	
+	<div id="kraj">
+		<button type="button" onclick="alert('Nema se gdje poslati!');" style="margin-right:10px">Pošalji</button><button type="button" onclick="history.go(0);">Reset</button>
+		<br><br><br>
+		<a href="tablice.html"> <button>Nazad</button> </a>
+	</div>
+</body>
+</html>
